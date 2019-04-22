@@ -30,3 +30,9 @@ D:\ECLIPSE\VISStud\Bases\wind1\obj\Debug\wind1.exe
 D:\ECLIPSE\VISStud\Bases\wind1\obj\Debug\wind1.pdb
 D:\ECLIPSE\VISStud\Bases\wind1\obj\Debug\AddWindow.g.cs
 D:\ECLIPSE\VISStud\Bases\wind1\obj\Debug\AddWindow.baml
+D:\ECLIPSE\VISStud\Bases\wind1\bin\Debug\EntityFramework.dll
+D:\ECLIPSE\VISStud\Bases\wind1\bin\Debug\EntityFramework.SqlServer.dll
+D:\ECLIPSE\VISStud\Bases\wind1\bin\Debug\EntityFramework.xml
+D:\ECLIPSE\VISStud\Bases\wind1\bin\Debug\EntityFramework.SqlServer.xml
+D:\ECLIPSE\VISStud\Bases\wind1\bin\Debug\ru\EntityFramework.resources.dll
+D:\ECLIPSE\VISStud\Bases\wind1\obj\Debug\wind1.csproj.CopyComplete

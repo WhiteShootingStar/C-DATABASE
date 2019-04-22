@@ -13,7 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using wind1.Std;
+using wind1.std;
 
 namespace wind1
 {
@@ -23,23 +23,23 @@ namespace wind1
     /// 
     public partial class AddWindow : Window
     {
-        public Student stud = null;
+        public StSubj stud = null;
         public Student target = null;
-        public AddWindow(IEnumerable<string> studies, IEnumerable<string> subj, Student student)
+        public AddWindow(IEnumerable<Study> studies, IEnumerable<Subject> subj, Student student)
         {
             InitializeComponent();
 
-            CBStudies.ItemsSource = studies;
-            CBStudies.SelectedItem = studies.First();
-            LBSubject.ItemsSource = subj;
+            CBStudies.ItemsSource = studies.ToList();
+            CBStudies.SelectedItem = studies.ToList().First();
+            LBSubject.ItemsSource = subj.ToList();
             if (student != null)
             {
                 target = student;
                 LastNameText.Text = target.LastName;
                 FirstNameText.Text = target.FirstName;
-                IndexText.Text = target.Index;
-               
-                CBStudies.SelectedItem = target.Studies;
+               IndexText.Text = target.IndexNumber;
+
+                 // CBStudies.SelectedItem = target.Studies;
                 BUT1.Content = "Update";
             }
         }
@@ -52,39 +52,36 @@ namespace wind1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Regex regex = new Regex("^s[0-9]*$");
-          
-          
-                
-               
-                if (regex.IsMatch(IndexText.Text))
-                {
-                    var a = LBSubject.SelectedItems.Cast<string>();
-                if (target != null)
-                {
-                    stud = new Student { LastName = LastNameText.Text, FirstName = FirstNameText.Text, Address = target.Address, Index = IndexText.Text, Subjects = a, Studies = CBStudies.SelectedValue.ToString() };
-                }
-                else
-                {
-                    stud = new Student { LastName = LastNameText.Text, FirstName = FirstNameText.Text, Address = null, Index = IndexText.Text, Subjects = a, Studies = CBStudies.SelectedValue.ToString() };
-                }
-                   
 
-                    Console.WriteLine("puk");
 
-                    Close();
 
-                }
 
+            if (regex.IsMatch(IndexText.Text))
+            {
+                var a = LBSubject.SelectedItems.Cast<string>();
+            }
             
-           
-        }
-        public Student GetStudent()
-        {
-            return stud;
-        }
+            stud = new StSubj { LastName = LastNameText.Text, FirstName = FirstNameText.Text, Address = "EMPTY", IndexNumber = IndexText.Text, Study = (Study)CBStudies.SelectedItem, IdStudies = ((Study)CBStudies.SelectedItem).IdStudies, Subject = LBSubject.SelectedItems.Cast<Subject>().ToList() };
 
+            //else
+            //{
+            //    stud = new Student { LastName = LastNameText.Text, FirstName = FirstNameText.Text, Address = null, Index = IndexText.Text, Subjects = a, Studies = CBStudies.SelectedValue.ToString() };
+            //}
+
+
+            Console.WriteLine("puk");
+
+            Close();
+
+        }
 
 
 
     }
+
+
+
+
+
 }
+

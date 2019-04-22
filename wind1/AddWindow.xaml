@@ -33,7 +33,7 @@
         <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="10.4,9.8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="LastNameText"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="10.4,9.8,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="FirstNameText"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="10.4,9.8,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="IndexText" />
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="10.4,9.8,0,0" Grid.Row="4" Text="TextBox" VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="CBStudies"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="10.4,9.8,0,0" Grid.Row="4" Text="TextBox" VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="CBStudies" />
         <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="75" Margin="10.4,9.6,0,0" Grid.Row="5" VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="LBSubject" SelectionMode="Multiple">
             
         </ListBox>

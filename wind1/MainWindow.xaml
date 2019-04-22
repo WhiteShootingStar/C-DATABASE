@@ -25,9 +25,9 @@
             <DataGrid.Columns >
                 <DataGridTextColumn Header="Last Name" Width="*"  Binding="{Binding LastName}"></DataGridTextColumn>
                 <DataGridTextColumn Header="First Name" Width="*" Binding="{Binding FirstName}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Index Number" Width="*" Binding="{Binding Index}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Index Number" Width="*" Binding="{Binding IndexNumber}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Adderss" Width="1.5*" Binding="{Binding Address}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Studies" Width="2*" Binding="{Binding Studies}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Studies" Width="2*" Binding="{Binding Name}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Add" HorizontalAlignment="Center" Margin="516,347,148,0" Grid.Row="1" VerticalAlignment="Top" MinWidth="128" Height="44" Width="auto" Click="Button_Click_1"/>
