@@ -1,0 +1,1 @@
+﻿select * from apbd.Student_Subject;

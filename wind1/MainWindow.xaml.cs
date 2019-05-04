@@ -126,8 +126,21 @@ namespace wind1
                         //var entry = database.Entry<Student>(student);
                         //entry.State = System.Data.Entity.EntityState.Modified;
 
-                       // database.SaveChanges();
+                        database.SaveChanges();
+                        var temp = stTochange.Student_Subject.ToList();
+                         var ss =database.Student_Subject.Where(s => s.IdStudent == stTochange.IdStudent).ToList();
+                        foreach (var item in ss)
+                        {
+                            database.Student_Subject.Remove(item);
 
+                        }
+                        database.SaveChanges();
+                        //foreach (var item in stTochange.Student_Subject)
+                        //{
+                        //    //  Console.Write(stTochange.sSubject.Count);
+                        //    database.Student_Subject.Remove(database.Student_Subject.First(s => s.IdStudent == stTochange.IdStudent));
+                        //    database.SaveChanges();
+                        //}
 
                         foreach (var item in st.Subject)
                         {
